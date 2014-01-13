@@ -21,4 +21,7 @@ $(function () {
             newButton.addClass('active');
         }
     }
+	
+	// Add an extra frame at the end for smooth return scroll
+	screens.first().clone().appendTo(screenWrapper);
 });
