@@ -12,6 +12,8 @@ $(function () {
             .appendTo(buttonsContainer)
             .click(function (event) {
                 var buttonIndex = buttonsContainer.children().index(event.target);
+				buttonsContainer.children('.active').removeClass('active');
+				$(event.target).addClass('active');
                 screenWrapper.animate({left: -(buttonIndex * 400)}, 500);
             });
             
